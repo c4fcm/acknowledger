@@ -1,4 +1,8 @@
 Acknowledger::Application.routes.draw do
+  resources :project_hosts do as_routes end
+
+  resources :project_people do as_routes end
+
   resources :people do as_routes end
 
   resources :hosts do as_routes end
