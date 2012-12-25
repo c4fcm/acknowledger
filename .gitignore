@@ -16,3 +16,5 @@ config/database.yml
 /tmp
 *.swp
 Gemfile.lock
+
+.DS_Store
