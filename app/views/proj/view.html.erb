@@ -3,6 +3,7 @@
       <!-- START THE FEATURETTES -->
       <div class="featurette">
         <h2 class="featurette-heading"><%=@project.title%> <span class="muted"><%=@project.subtitle%></span></h2>
+        <h4><%=@project.date.to_date.to_formatted_s(:rfc822)%><% if @project.end_date%>- <%=@project.end_date.to_date.to_formatted_s(:rfc822)%><%end%></h4>
       <div id="3" class="acknowledge-block">
         <span class="contributor">
         <nobr>
@@ -53,5 +54,5 @@
         </span>
       </div>
         <div class="featurette-image pull-right"><%=raw @project.image%></div>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p class="lead"><%=raw @project.description%></p>
       </div>
