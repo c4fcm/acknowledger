@@ -3,3 +3,9 @@ o Collaborator Index
 o Project Index
 o Add Hosts
 o If metadata includes "post" redirect to the blog post
+
+x blog posts added
+x import twitter info
+o set up deployment to hypatia
+o import gravatar info
+o (scrape?) projects from old website
