@@ -1,8 +1,8 @@
 class Project < ActiveRecord::Base
   has_many :project_people
-  #has_many :project_hosts
+  has_many :project_hosts
   has_many :people, :through => :project_people, :order=>"project_people.order ASC"
-  #has_many :hosts, :through => :project_host
+  has_many :hosts, :through => :project_hosts, :order=>"project_hosts.order ASC"
 
   def add_person_to_project(person, label, order=nil)
     if self.people.size == 0

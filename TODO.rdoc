@@ -1,9 +1,9 @@
-o Add more projects
 o Collaborator Index
 o Project Index
-o Add Hosts
 o If metadata includes "post" redirect to the blog post
+o Add more projects
 
+x Add Hosts
 x blog posts added
 x import twitter info
 o set up deployment to hypatia
