@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  uri: MyString
+  name: J. Nathan Matias
+  uri: https://twitter.com/natematias
+  twitter_account: natematias
   avatar: MyString
 
 two:
-  name: MyString
-  uri: MyString
+  name: Matt Stempeck
+  uri: https://twitter.com/mstem
+  twitter_account: mstem
   avatar: MyString

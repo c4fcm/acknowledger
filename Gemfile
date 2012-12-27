@@ -7,6 +7,7 @@ gem 'rails', '3.2.2'
 
 gem 'mysql', '2.8.1'
 gem "active_scaffold"
+gem 'twitter'
 
 
 # Gems used only for assets and not required

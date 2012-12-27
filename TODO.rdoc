@@ -1,0 +1,5 @@
+o Add more projects
+o Collaborator Index
+o Project Index
+o Add Hosts
+o If metadata includes "post" redirect to the blog post

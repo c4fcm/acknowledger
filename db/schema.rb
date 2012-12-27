@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121223154456) do
+ActiveRecord::Schema.define(:version => 20121226130351) do
 
   create_table "hosts", :force => true do |t|
     t.string   "name"
@@ -25,8 +25,10 @@ ActiveRecord::Schema.define(:version => 20121223154456) do
     t.string   "name"
     t.string   "uri"
     t.string   "avatar"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "twitter_account"
+    t.text     "twitter_data"
   end
 
   create_table "project_hosts", :force => true do |t|

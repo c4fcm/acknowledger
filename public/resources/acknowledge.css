@@ -36,8 +36,8 @@
     text-decoration: none;
 }
 .acknowledge-block .contributor {
-    background: none repeat scroll 0 0 #F6F6F6;
-    border-radius: 5px 5px 5px 5px;
+/*    background: none repeat scroll 0 0 #F2F2F2;*/
+    border-radius: 8px 8px 8px 8px;
     display: inline-block;
     margin: 5px;
     padding: 3px 5px 3px 3px;
