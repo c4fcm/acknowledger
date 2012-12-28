@@ -13,6 +13,7 @@ Acknowledger::Application.routes.draw do
   # first created -> highest priority.
 
   match 'proj/:id' => 'proj#view'
+  match 'us/' => 'us#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

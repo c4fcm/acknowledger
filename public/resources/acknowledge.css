@@ -36,12 +36,54 @@
     text-decoration: none;
 }
 .acknowledge-block .contributor {
-/*    background: none repeat scroll 0 0 #F2F2F2;*/
-    border-radius: 8px 8px 8px 8px;
+/*    background: none repeat scroll 0 0 #F2F2F2;
+    border-radius: 8px 8px 8px 8px;*/
     display: inline-block;
-    margin: 5px;
-    padding: 3px 5px 3px 3px;
+    margin-bottom:2px;
+    margin-right: 5px;
+    margin-left:5px;
+    padding: 2px 2px 2px 2px;
 }
 .acknowledge-block .contributor:hover {
     background: none repeat scroll 0 0 white;
 }
+
+.acknowledge-matrix .contributor{
+  display:inline-block;
+  padding:2px;
+  margin:0px;
+  position:relative;
+  width:98px;
+  height:98px;
+}
+
+.acknowledge-matrix .contributor .label{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.acknowledge-matrix .contributor a:hover{
+  text-decoration:none;
+}
+
+.acknowledge-matrix .name{
+  background:black;
+  color:white;
+  font-weight:bold;
+  position:absolute;
+  bottom:2px;
+  left:2px;
+  width:94px;
+  display:none;
+}
+
+.acknowledge-matrix img{
+  width:94px;
+  height:94px;
+}
+
+.acknowledge-matrix .contributor:hover .name{
+  display:inline;
+}
+

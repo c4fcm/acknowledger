@@ -1,0 +1,9 @@
+<% @title="Collaborators: J. Nathan Matias" %>
+<div class="container marketing">
+   <h2>My collaborators</h2>
+   <p>Introductory text goes here in a paragraph format. Here is where I explain what I'm doing.</p>
+  <div class="row-fluid acknowledge-matrix">
+    <% @project_people.each do |k, project_person| %>
+      <%= render :partial => "collaborator", :locals => {:project_person=>project_person} %>
+    <% end %>
+  </div>

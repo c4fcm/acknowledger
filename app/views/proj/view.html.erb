@@ -1,12 +1,13 @@
 <% @title=@project.title+@project.subtitle %>  
 <div class="container marketing">
       <!-- START THE FEATURETTES -->
-      <div class="featurette">
+     <div class="featurette">
         <h2 class="featurette-heading"><%=@project.title%> <span class="muted"><%=@project.subtitle%></span></h2>
-        <h4><%=@project.date.to_date.to_formatted_s(:rfc822)%><% if @project.end_date%>- <%=@project.end_date.to_date.to_formatted_s(:rfc822)%><%end%></h4>
       <div id="3" class="acknowledge-block">
+        <h4 style="display:inline-block"><%=@project.date.to_date.to_formatted_s(:rfc822)%><% if @project.end_date%>- <%=@project.end_date.to_date.to_formatted_s(:rfc822)%><%end%></h4>
         <%= render :partial => "project_person", :collection => @project.project_people %>
+        <%= render :partial => "project_host", :collection => @project.project_hosts %>
       </div>
         <div class="featurette-image pull-right"><%=raw @project.image%></div>
         <p class="lead"><%=raw @project.description%></p>
-      </div>
+     </div>

@@ -7,7 +7,6 @@ class Person < ActiveRecord::Base
   def unique_collaborators
     #id: {:person=>person, :count=>
     collabs = {}
-    #TODO TEST AND DEBUG
     self.projects.each do |project|
       project.project_people.each do |project_person|
         if collabs.has_key? project_person.person.id 
