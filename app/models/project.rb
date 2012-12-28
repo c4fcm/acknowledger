@@ -10,8 +10,8 @@ class Project < ActiveRecord::Base
     return nil if !order.nil? and order <= max_order
     order = max_order + 1 if order.nil?
     
-    ProjectPerson.create!({:project=>self, :person=>person, 
-                           :label=>label, :order=>order})
+    pp = ProjectPerson.create!({:project=>self, :person=>person, 
+                                :label=>label, :order=>order})
   end
 
   def add_host_to_project(host, label, order=nil)
@@ -20,8 +20,8 @@ class Project < ActiveRecord::Base
     return nil if !order.nil? and order <= max_order
     order = max_order + 1 if order.nil?
 
-    ProjectHost.create!({:project=>self, :host=>host,
-                         :label=>label, :order=>order})
+    ph = ProjectHost.create!({:project=>self, :host=>host,
+                              :label=>label, :order=>order})
   end
   
 end
