@@ -1,7 +1,9 @@
-o Collaborator Index
+
 o Project Index
+- Collaborator Index (improve resolution, randomize index?)
 o If metadata includes "post" redirect to the blog post
-o Add more projects
+
+o (3 hrs to import) Add more projects
 
 x Add Hosts
 x blog posts added

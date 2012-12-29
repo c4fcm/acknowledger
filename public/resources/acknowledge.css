@@ -35,6 +35,9 @@
 .contributors a:hover {
     text-decoration: none;
 }
+.acknowledge-block{
+  border-bottom:1px solid #ccc;
+}
 .acknowledge-block .contributor {
 /*    background: none repeat scroll 0 0 #F2F2F2;
     border-radius: 8px 8px 8px 8px;*/

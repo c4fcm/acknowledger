@@ -1,7 +1,6 @@
 class Person < ActiveRecord::Base
   has_many :project_people
   has_many :projects, :through=>:project_people
-  has_many :people, :through=>:projects
 
   #note: we leave out hosts in this calculation
   def unique_collaborators
