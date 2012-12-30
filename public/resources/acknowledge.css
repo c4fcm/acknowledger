@@ -89,4 +89,23 @@
 .acknowledge-matrix .contributor:hover .name{
   display:inline;
 }
+/*   Contributor matrix on index page         */
+.contributor-matrix .contributor{
+  display:inline-block;
+}
+.contributor-matrix img{
+  width:32px;height:32px;
+  margin-right:0px;
+  margin-left:0px;
+  margin-bottom:2px;
+  vertical-align:middle;
+}
 
+.contributor-matrix .contributor{
+  margin:0px;
+}
+
+.contributor-matrix .contributor:hover{
+  background:none !important;
+  text-decoration:none;
+}

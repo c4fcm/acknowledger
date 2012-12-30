@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121227092501) do
+ActiveRecord::Schema.define(:version => 20121230151102) do
 
   create_table "hosts", :force => true do |t|
     t.string   "name"
@@ -56,12 +56,13 @@ ActiveRecord::Schema.define(:version => 20121227092501) do
     t.string   "subtitle"
     t.string   "category"
     t.string   "uri"
-    t.string   "image"
+    t.text     "image"
     t.datetime "date"
     t.datetime "end_date"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.text     "description"
+    t.string   "manual_date"
   end
 
 end

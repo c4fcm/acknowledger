@@ -19,4 +19,8 @@ class Person < ActiveRecord::Base
     collabs.delete(self.id)
     collabs
   end
+  def bigger_avatar
+    return self.avatar.gsub("normal", "bigger") if !self.avatar.nil?
+    return nil
+  end   
 end

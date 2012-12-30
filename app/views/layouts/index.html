@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= @title %></title>
+    <title>J. Nathan Matias CV and Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/resources/main.css" rel="stylesheet">
-    <link href="/resources/acknowledge.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./resources/main.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -19,31 +18,61 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-<!--    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">-->
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
   <body>
 
 <!-- TOP OF PAGE -->
-  <div class="container marketing well">
+  <div class="container marketing">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="/resources/natematias.png" width="180" height="180">
-        <h2 class="top-featurette-heading">J. Nathan Matias &nbsp; &nbsp; <span class="muted">MIT Media Lab</span></h2>
-        <p class="lead">I <a href="/us/">collaborate</a> on technology and communities which empower people to become more creative, more effective, and more informed. I currently research and design technology for media analytics and creative learning at the <a href="http://civic.mit.edu">MIT Center for Civic Media</a>.</p>
-        	<p><a href="https://twitter.com/natematias">Follow me at @natematias</a> | <a href="http://civic.mit.edu/users/natematias">read my blog</a></li> | <a href="http://flickr.com/photos/natematias">photos</a> | <a href="https://twitter.com/1book140">@1book140</a></p>
+        <img class="featurette-image pull-right" src="resources/natematias.png">
+        <h2 class="top-featurette-heading">J. Nathan Matias<span class="muted">MIT Media Lab</span></h2>
+        <p class="lead">I <a href="/us">collaborate</a> on technology and communities which empower people to become more creative, more effective, and more informed. I currently research and design technology for media analytics and creative learning at the <a href="http://civic.mit.edu">MIT Center for Civic Media<?a>.</p>
+        
+        	<li>twitter: <a href="https://twitter.com/natematias">@natematias</a></li>
+					<li>blog: <a href="http://civic.mit.edu/users/natematias">civic.mit.edu/users/natematias</a></li>
+        	<li>photos: <a href="http://flickr.com/photos/natematias">flickr.com/photos/natematias</a></li>
+        	<li>github: <a href="http://github.com/natematias">github.com/natematias</a></li>
+
+        
       </div>
 
   </div>
 
-<%= yield %>
+  <!-- list of affiliation labels -->
+  <div class="container affiliations">
+  	<div class="row">
+  		<a href="http://civic.mit.edu"><div class="label">
+  			MIT Media Lab
+  		</div></a>
+  		<a href="http://civic.mit.edu"><div class="label">
+  		 	MIT Center for Civic Media
+  		</div></a>
+  		<a href="https://twitter.com/1book140"><div class="label">
+  			@1book140
+  		</div></a>
+  		<a href="http://www.librarything.com/catalog/rubberpaw"><div class="label">
+  			librarything
+  		</div></a>
+  		<a href="http://thersa.org"><div class="label">
+  			RSA Fellow
+  		</div></a>
+  		<a href="http://bostonathenaeum.org"><div class="label">
+  			Boston Athenaeum
+  		</div></a>
 
+  	</div>
+    </div>
 
-<hr/>
+      <%= yield %>
+
+      <hr class="featurette-divider">
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -58,7 +87,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 
 <!--    <script src="./bootstrap/js/jquery.js"></script>
     <script src="./bootstrap/js/bootstrap-transition.js"></script>

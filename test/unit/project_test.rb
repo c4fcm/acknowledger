@@ -38,4 +38,8 @@ class ProjectTest < ActiveSupport::TestCase
     assert_equal 3, projects(:one).project_hosts.size
     assert_equal 3, projects(:one).project_hosts.last.order
   end
+
+  test "featured posts" do
+    assert_equal 1, Project.featured_posts.size
+  end
 end

@@ -1,13 +1,19 @@
-
-o Project Index
+- Project Index
 - Collaborator Index (improve resolution, randomize index?)
 o If metadata includes "post" redirect to the blog post
+o Add project website link to portfolio page
+o Add optional project slug
+o Add write-in date option
 
 o (3 hrs to import) Add more projects
 
-x Add Hosts
-x blog posts added
-x import twitter info
 o set up deployment to hypatia
 o import gravatar info
 o (scrape?) projects from old website
+x Add Hosts
+x blog posts added
+x import twitter info
+
+------- EDITORIAL ------
+o Fix Link to Dr Johnson in SwiftSpeare
+o Festival of Learning Coordination App

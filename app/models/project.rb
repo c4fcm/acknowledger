@@ -23,5 +23,10 @@ class Project < ActiveRecord::Base
     ph = ProjectHost.create!({:project=>self, :host=>host,
                               :label=>label, :order=>order})
   end
+
+  def self.featured_posts
+    sql = "category LIKE '%post%' and category LIKE '%featured%'"
+    Project.where(sql).order("date DESC")
+  end
   
 end
