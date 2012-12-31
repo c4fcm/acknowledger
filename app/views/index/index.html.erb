@@ -1,10 +1,17 @@
-<% @title="J. Nathan Matias: CV and Portfolio" %>
+<% @title="J. Nathan Matias: Collaborative Polymath" %>
 <div class="container marketing well contributor-matrix">
-  <a href="/us" class="btn btn-info">My collaborators</a>
+  <a href="/us" class="btn btn-info">Collaborators</a>
   <% @collaborators.each do |k, collaborator|%>
   <%= render :partial => "collaborator", :locals => {:collaborator=>collaborator[0] }%>
   <% end %>
 </div>
+
+<div class="container">
+  <div class="row-fluid">
+     <%= render :partial => "featured_project", :collection => @featured_projects %>
+  </div>
+</div>
+<hr/>
 
 <div class="container marketing">
  <!-- Three columns of text below the carousel -->
