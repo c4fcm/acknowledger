@@ -279,6 +279,7 @@
 ============================================================*/
     .main-feature{
        position:relative;
+       margin-bottom:10px;
     }
     .main-feature .main-feature-title{
        position:absolute;
