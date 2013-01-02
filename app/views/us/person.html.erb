@@ -1,0 +1,10 @@
+<div class="well"><a title="<%=@person.name%>" href="<%=@person.uri%>"><h3><img src="<%=@person.bigger_avatar%>"> <%= @person.name%></h3></a>
+    <% @person.project_people.each do |project_person| %>
+      <%= render :partial => "project_role", :locals => {:project_person=>project_person} %>
+    <% end %>
+<div class="acknowledge-matrix">
+    <% @person.unique_collaborators.each do |k, project_person| %>
+      <%= render :partial => "collaborator", :locals => {:project_person=>project_person} %>
+    <% end %>
+</div>
+</div>

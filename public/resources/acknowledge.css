@@ -109,3 +109,7 @@
   background:none !important;
   text-decoration:none;
 }
+
+.contributor.page h2.name{
+  display:inline-block;
+}
