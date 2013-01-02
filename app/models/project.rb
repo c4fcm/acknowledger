@@ -26,7 +26,7 @@ class Project < ActiveRecord::Base
 
   def self.featured_posts
     sql = "category LIKE '%post%' and category LIKE '%featured%'"
-    Project.where(sql).order("date DESC")[0,8]
+    Project.where(sql).order("date DESC")[0,12]
   end
   
   def self.featured_projects
