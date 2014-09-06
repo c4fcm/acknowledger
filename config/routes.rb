@@ -12,7 +12,7 @@ Acknowledger::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  match 'proj/:id' => 'proj#view'
+  match 'project/:id' => 'proj#view'
   match 'person/:id' => 'us#person'
   match 'us/' => 'us#index'
 
