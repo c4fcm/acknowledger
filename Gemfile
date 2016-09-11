@@ -8,6 +8,8 @@ gem 'rails', '~>4.2.7.1'
 gem 'mysql2', '~> 0.4.0'
 gem 'twitter'
 
+gem 'rails_admin', '>= 1.0.0.rc'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
