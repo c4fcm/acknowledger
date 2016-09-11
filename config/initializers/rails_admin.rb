@@ -41,11 +41,3 @@ RailsAdmin.config do |config|
 
   config.label_methods += [:title] 
 end
-
-
-
-class RailsAdmin::Config::Fields::Types::String
-  def input_size
-    75
-  end
-end

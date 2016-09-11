@@ -8,6 +8,12 @@ class Project < ActiveRecord::Base
     configure(:description) do
       html_attributes cols: 80, rows: 10
     end
+
+    %i(title subtitle category uri).each do |attr|
+      configure(attr) do
+        html_attributes size: 80
+      end
+    end
   end
 
   def add_person_to_project(person, label, order=nil)
