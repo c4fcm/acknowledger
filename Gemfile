@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails', ' ~> 4.2.1'
+gem 'devise', '~> 4.2.0'
 
 group :development, :test do
   gem "byebug"

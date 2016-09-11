@@ -2,3 +2,11 @@
 
 - setup database.yml
 - setup ENV['SECRET_KEY_BASE'] (or edit secrets.yml)
+
+# Setting up admin access
+
+- in the rails console, create a new user:
+
+    user = User.create!(email: 'fred@dressipi.com', password: 'aPassword', password_confirmation: 'aPassword')
+
+You can login at /users/sign_in
