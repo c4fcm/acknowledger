@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.22'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql', '2.8.1'
+gem 'mysql2', '~> 0.3.0'
 gem "active_scaffold"
 gem 'twitter'
 
