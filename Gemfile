@@ -5,7 +5,7 @@ gem 'rails', '~>4.2.7.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '~> 0.3.0'
+gem 'mysql2', '~> 0.4.0'
 gem 'twitter'
 
 # Gems used only for assets and not required
