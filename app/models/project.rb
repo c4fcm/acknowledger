@@ -4,6 +4,12 @@ class Project < ActiveRecord::Base
   has_many :people, -> {order("project_people.order ASC")}, :through => :project_people
   has_many :hosts, -> {order("project_hosts.order ASC")}, :through => :project_hosts
 
+  rails_admin do
+    configure(:description) do
+      html_attributes cols: 80, rows: 10
+    end
+  end
+
   def add_person_to_project(person, label, order=nil)
     max_order = self.project_people.collect{|p| p.order}.max
     max_order = 0 if max_order.nil?

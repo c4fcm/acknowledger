@@ -38,4 +38,14 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.label_methods += [:title] 
+end
+
+
+
+class RailsAdmin::Config::Fields::Types::String
+  def input_size
+    75
+  end
 end
