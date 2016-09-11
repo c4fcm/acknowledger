@@ -1,8 +1,8 @@
 class Project < ActiveRecord::Base
   has_many :project_people
   has_many :project_hosts
-  has_many :people, :through => :project_people, :order=>"project_people.order ASC"
-  has_many :hosts, :through => :project_hosts, :order=>"project_hosts.order ASC"
+  has_many :people, -> {order("project_people.order ASC")}, :through => :project_people
+  has_many :hosts, -> {order("project_hosts.order ASC")}, :through => :project_hosts
 
   def add_person_to_project(person, label, order=nil)
     max_order = self.project_people.collect{|p| p.order}.max
