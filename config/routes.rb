@@ -3,9 +3,9 @@ Acknowledger::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  match 'project/:id' => 'proj#view'
-  match 'person/:id' => 'us#person'
-  match 'us/' => 'us#index'
+  get 'project/:id' => 'proj#view'
+  get 'person/:id' => 'us#person'
+  get 'us/' => 'us#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
