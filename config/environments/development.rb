@@ -21,6 +21,7 @@ Acknowledger::Application.configure do
 
   config.eager_load = false
   
+  config.serve_static_files = true
   # Do not compress assets
   config.assets.compress = false
 
