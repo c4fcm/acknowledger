@@ -14,6 +14,14 @@ class Project < ActiveRecord::Base
         html_attributes size: 80
       end
     end
+    
+    configure :people do
+      visible(false)
+    end
+
+    configure :hosts do
+      visible(false)
+    end
   end
 
   def add_person_to_project(person, label, order=nil)
