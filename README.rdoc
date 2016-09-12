@@ -1,7 +1,8 @@
 # Deploying
 
 - setup database.yml
-- setup ENV['SECRET_KEY_BASE'] (or edit secrets.yml)
+- setup ENV['SECRET_KEY_BASE'] (or edit secrets.yml) (run `rake token` to generate a random token)
+
 
 # Setting up admin access
 
@@ -10,3 +11,5 @@
     user = User.create!(email: 'fred@dressipi.com', password: 'aPassword', password_confirmation: 'aPassword')
 
 You can login at /users/sign_in
+
+The admin pages are at /admin
